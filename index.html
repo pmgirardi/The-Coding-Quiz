@@ -36,15 +36,28 @@
             limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Start Quiz</button>
+            <button type="button" id="start-quiz-button" class="btn btn-primary btn-lg px-4 gap-3">Start Quiz</button>
           </div>
         </div>
         </div>
     </main>
     <!-- Quiz  -->
+    <div id="question" style="display: none;">
+        <p id="questionTitle" class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold"></p>
+        <div class="pl-5 pt-2 pb-3 m-2 justify-content-center">
+            <p><button id="btn0" class="btn btn-dark"></button></p>
+            <p><button id="btn1" class="btn btn-dark"></button></p>
+            <p><button id="btn2" class="btn btn-dark"></button></p>
+            <p><button id="btn3" class="btn btn-dark"></button></p>
+            <hr id="lineBreak" style="display: none" class="mt-4">
+            <p id="answerCheck" style="display: none;"></p>
+        </div>
+      </div>
     <!-- Results -->
     <!-- Highscore  -->
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="assets/js/script.js"></script>
     
 </body>
