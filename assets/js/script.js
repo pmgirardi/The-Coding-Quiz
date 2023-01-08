@@ -39,3 +39,75 @@ var lineBreak = document.getElementById("lineBreak");
 var answerCheck = document.getElementById("answerCheck");
 
 // Results variables by element id 
+
+var results = document.getElementById("results");
+var finalScore = document.getElementById("finalScore");
+var enterInitials = document.getElementById("enterInitials");
+var submitBtn = document.getElementById("submitBtn");
+
+// Highscore variables by element id 
+
+
+var highScores = document.getElementById("highScores");
+var listOfHighScores = document.getElementById("listOfHighScores");
+
+// Appending HighScores variables by element id 
+
+var goBackBtn = document.getElementById("goBackBtn");
+var clearHighScoreBtn =document.getElementById("clearHighScoreBtn");
+
+// Displaying quiz questions 
+
+const Questions = [
+    {
+      question: "Commonly used datta types DO NOT include:",
+      answers: {
+        a: "Strings",
+        b: "Booleans",
+        c: "Alerts",
+        d: "Numbers"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "The condition in an if/else statement is enclosed within _____.",
+      answers: {
+        a: "Quotes",
+        b: "Curly brackets",
+        c: "Parentheses",
+        d: "Square Brackets"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Arrays in JavaScripts can be used to store _____.",
+      answers: {
+        a: "Numbers and strings",
+        b: "Other arrays",
+        c: "Booleans",
+        d: "Square brackets"
+      },
+      correctAnswer: "d"
+    },
+    {
+        question: "String values must be enclosed within _____ when being assignment to variables.",
+        answers: {
+          a: "Commas",
+          b: "Curly brackets",
+          c: "Quotes",
+          d: "Parentheses"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        answers: {
+          a: "JavaScript",
+          b: "Terminal/bash",
+          c: "For loops",
+          d: "Console log"
+        },
+        correctAnswer: "a"
+      }
+  ];
+
