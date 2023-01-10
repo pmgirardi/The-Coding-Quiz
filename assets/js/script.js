@@ -111,3 +111,78 @@ const Questions = [
       }
   ];
 
+//   Function to run timer 
+
+  var time = 75;
+  function Quiz() {
+      questionIndex = 0;
+      time = 75;
+      timeLeft.textContent = time;
+      initialInput.textContent = "";
+  
+      startDiv.style.display = "none";
+      questionDiv.style.display = "block";
+      timer.style.display = "block";
+      timesUp.style.display = "none";
+  
+      var startTimer = setInterval(function() {
+          time--;
+          timeLeft.textContent = time;
+          if(time <= 0) {
+              clearInterval(startTimer);
+              if (questionIndex < questions.length - 1) {
+                  gameOver();
+              }
+          }
+      },1000);
+  
+      showQuiz();
+  };
+
+  function showQuiz() {
+    nextQuestion();
+}
+
+// Questions and Answers 
+
+function nextQuestion() {
+    questionTitle.textContent = questions[questionIndex].question;
+    choice0.textContent = questions[questionIndex].choices[0];
+    choice1.textContent = questions[questionIndex].choices[1];
+    choice2.textContent = questions[questionIndex].choices[2];
+    choice3.textContent = questions[questionIndex].choices[3];
+}
+
+// Check if answer is right or wrong 
+
+function checkAnswer(answer) {
+
+    var lineBreak = document.getElementById("lineBreak");
+    lineBreak.style.display = "block";
+    answerCheck.style.display = "block";
+
+    if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
+        correctAns++;
+        answerCheck.textContent = "CORRECT!";
+    } else {
+        time -= 10;
+        timeLeft.textContent = time;
+        answerCheck.textContent = "WRONG!";
+    }
+
+    questionIndex++;
+    if (questionIndex < questions.length) {
+        nextQuestion();
+    } else {
+        gameOver();
+    }
+}
+
+function choose0() { checkAnswer(0); }
+
+function choose1() { checkAnswer(1); }
+
+function choose2() { checkAnswer(2); }
+
+function choose3() { checkAnswer(3); }
+
