@@ -6,7 +6,7 @@ For this assignment, I created timed quiz that stores high scores to gauge my pr
 
 ### Screenshot
 
-![Deployed Website](assets/images/demo_site.gif) 
+![Deployed Website](assets/images/demo.gif) 
 
 ### Link to deployed website
 
