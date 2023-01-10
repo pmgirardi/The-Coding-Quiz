@@ -1,5 +1,26 @@
+
 /* Customized "Start Quiz" button  */
-    .btn-primary {
+.btn-primary {
+
+
+    color: #FFFFFF;
+  
+  
+    background-color: #813ebb
+  
+  
+    }
+
+    /* Customized "Question title" button  */
+
+    #questionTitle {
+        font-size: 20px;
+        font-family: ui-sans-serif;
+    }
+
+    /* Customized "Answers" buttons  */
+
+    .btn-secondary {
 
 
         color: #FFFFFF;
@@ -9,3 +30,16 @@
       
       
         }
+
+    .btn-info {
+
+
+        color: #FFFFFF;
+      
+      
+        background-color: #813ebb
+      
+      
+        }
+
+    
